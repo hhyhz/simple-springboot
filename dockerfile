@@ -18,8 +18,6 @@ RUN yum install -y -q wget \
 && wget http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo \
 && yum -y -q install apache-maven
 
-
-
 #配置环境
 ENV JAVA_HOME /usr/local/jdk1.8.0_141
 ENV CLASSPATH $JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar

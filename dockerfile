@@ -11,7 +11,7 @@ COPY . /usr/local/${PROJECT_NAME}/
 WORKDIR /usr/local/
 
 #安装wget,下载安装jdk/maven
-RUN yum update -y -q && yum install -y maven
+RUN yum update -y -q && yum install -y -q maven
 
 #设置工作目录
 WORKDIR /usr/local/${PROJECT_NAME}/

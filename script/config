@@ -1,0 +1,14 @@
+projectName=simple-springboot
+containerPort=9000
+customCpu=512
+customMemory=1024
+desiredCount=1
+
+executionRoleArn=role-for-ecs
+registryUrl=862536296273.dkr.ecr.us-east-2.amazonaws.com
+loadBalancerArn=arn:aws:elasticloadbalancing:us-east-2:862536296273:loadbalancer/app/elb-test/1a42618121c3afb1
+loadBalancerDNS=elb-test-1727089334.us-east-2.elb.amazonaws.com
+targetGroupArn=arn:aws:elasticloadbalancing:us-east-2:862536296273:targetgroup/tg-test/2a7659f1b8afd2a8
+subnet1=subnet-3ad62e76
+subnet2=subnet-dcd08bb4
+securityGroup=sg-0fbc343712be10dce

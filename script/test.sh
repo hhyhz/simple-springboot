@@ -1,0 +1,13 @@
+echo $taskFamily
+echo $clusterName
+echo $serviceName
+echo $projectName
+echo $containerPort
+echo $customCpu
+echo $customMemory
+echo $registryUrl
+echo ${subnet1}
+echo ${subnet2}
+echo ${securityGroup}
+echo ${loadBalancerArn}
+echo ${targetGroupArn}

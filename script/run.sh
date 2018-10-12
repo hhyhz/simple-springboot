@@ -38,6 +38,9 @@ export securityGroup=`echo ${currentline} | cut -d"=" -f2`
 currentline=$(cat $file_config | grep "executionRoleArn")
 export executionRoleArn=`echo ${currentline} | cut -d"=" -f2`
 
+currentline=$(cat $file_config | grep "loadBalancerDNS")
+loadBalancerDNS=`echo ${currentline} | cut -d"=" -f2`
+
 export clusterName=${projectName}-cluster
 export taskFamily=${projectName}-task
 export serviceName=${projectName}-service
